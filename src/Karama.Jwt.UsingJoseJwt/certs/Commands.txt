@@ -1,0 +1,8 @@
+﻿//Create initial certificate
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
+
+//Microsoft Enhanced Cryptographic Provider v1.0  - to demonstrate "Invalid Algorithm Specified"
+openssl pkcs12 -export -in certificate_pub.crt -inkey private.key -out certificate_pubInvalidAlgorithm.p12
+
+//Microsoft Enhanced RSA and AES Cryptographic Provider - to demonstrate correct provider usage
+openssl pkcs12 -export -in certificate_pub.crt -inkey private.key -CSP "Microsoft Enhanced RSA and AES Cryptographic Provider" -out certificate_pubWithCSPSpecified.p12
