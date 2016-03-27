@@ -21,6 +21,7 @@ more accessible, and obvious, and Karama.Jwt.UsingJoseJwt is provided as an exam
 Soluition setup
 ----------------------------
 1) Ddownload and installcygwin64, with openssl.
+
 2) Run the following commands in cygwin
 
 //Create initial certificate
