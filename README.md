@@ -33,7 +33,7 @@ more accessible, and obvious, and Karama.Jwt.UsingJoseJwt is provided as an exam
 
 3) Copy certificate_pub.crt, certificate_pubInvalidAlgorithm.p12, certificate_pubWithCSPSpecified.p12 and private.key into the certs folder in each project, for each file ensure that "Copy always" is selected against "Copy to Output Directory".
 
-4) Update the password for the private key in Program.cs.
+4) Update the password for the .p12 files in Program.cs in both projects.
 
 5) Run the projects uncommenting the line with "var privateKey = ..." according the outcome you want to observer (with error, and without) 
 
