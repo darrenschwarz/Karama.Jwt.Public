@@ -23,15 +23,13 @@ more accessible, and obvious, and Karama.Jwt.UsingJoseJwt is provided as an exam
 2) Run the following commands in cygwin
 
 - Create initial certificate
-openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
+-- openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
 
-Microsoft Enhanced Cryptographic Provider v1.0  - to demonstrate "Invalid algorithm specified.
-----------------------------
-openssl pkcs12 -export -in certificate_pub.crt -inkey private.key -out certificate_pubInvalidAlgorithm.p12
+- Microsoft Enhanced Cryptographic Provider v1.0  - to demonstrate "Invalid algorithm specified.
+-- openssl pkcs12 -export -in certificate_pub.crt -inkey private.key -out certificate_pubInvalidAlgorithm.p12
 
-Microsoft Enhanced RSA and AES Cryptographic Provider - to demonstrate correct provider usage
-----------------------------
-openssl pkcs12 -export -in certificate_pub.crt -inkey private.key -CSP "Microsoft Enhanced RSA and AES Cryptographic Provider" -out certificate_pubWithCSPSpecified.p12
+- Microsoft Enhanced RSA and AES Cryptographic Provider - to demonstrate correct provider usage
+-- openssl pkcs12 -export -in certificate_pub.crt -inkey private.key -CSP "Microsoft Enhanced RSA and AES Cryptographic Provider" -out certificate_pubWithCSPSpecified.p12
 
 3) Copy certificate_pub.crt, certificate_pubInvalidAlgorithm.p12, certificate_pubWithCSPSpecified.p12 and private.key into the certs folder in each project, for each file ensure that "Copy always" is selected against "Copy to Output Directory".
 
