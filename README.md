@@ -22,8 +22,7 @@ more accessible, and obvious, and Karama.Jwt.UsingJoseJwt is provided as an exam
 
 2) Run the following commands in cygwin
 
-Create initial certificate
-----------------------------
+- Create initial certificate
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
 
 Microsoft Enhanced Cryptographic Provider v1.0  - to demonstrate "Invalid algorithm specified.
