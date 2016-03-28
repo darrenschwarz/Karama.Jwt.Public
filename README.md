@@ -38,7 +38,7 @@ more accessible, and obvious, and Karama.Jwt.UsingJoseJwt is provided as an exam
 5) Run the projects uncommenting the line with "var privateKey = ..." according the outcome you want to observer (with error, and without) 
 
 If you break point on "if (privateKey != null)", and just above hover over "var privateKey", expand private, expand CspKeyContainerInfo, and look at "ProviderName" you will see that  when using certificate_pubInvalidAlgorithm.p12 the value is "Microsoft Enhanced Cryptographic Provider v1.0", and when using certificate_pubWithCSPSpecified.p12 the value is "Microsoft Enhanced RSA and AES Cryptographic Provider". (see images folder)
-
+https://github.com/darrenschwarz/Karama.Jwt.Public/blob/master/images/MicrosoftEnhancedCryptographicProviderv1.0.jpg
 Microsoft Enhanced Cryptographic Provider v1.0 does not support RS256 where as Microsoft Enhanced RSA and AES Cryptographic Provider does.
 
 Hopefully this post is useful and will fast track you to a solution, and a better understanding of the problem space.
