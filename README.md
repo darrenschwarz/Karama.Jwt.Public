@@ -18,7 +18,7 @@ more accessible, and obvious, and Karama.Jwt.UsingJoseJwt is provided as an exam
 
 
 # Soluition setup
-1) Ddownload and installcygwin64, with openssl.
+1) Download and installcygwin64, with openssl.
 
 2) Run the following commands in cygwin
 
@@ -44,12 +44,12 @@ Microsoft Enhanced Cryptographic Provider v1.0 does not support RS256 where as M
 
 Hopefully this post is useful and will fast track you to a solution, and a better understanding of the problem space.
 
-Links & ackowledgements
+Links & acknowledgements
 ---------------------------------------
 
-https://github.com/dvsekhvalnov/jose-jwt (a great package for workin with JWTs)
+https://github.com/dvsekhvalnov/jose-jwt (a great package when working with JWTs)
 
-http://www.cusoon.fr/update-microsoft-certificate-authorities-to-use-the-sha-2-hashing-algorithm-2/ (backgroound information relating to SHA-2 hashing algorithm)
+http://www.cusoon.fr/update-microsoft-certificate-authorities-to-use-the-sha-2-hashing-algorithm-2/ (background information relating to SHA-2 hashing algorithm)
 
 https://technet.microsoft.com/en-us/library/security/2949927.aspx (Microsoft Security Advisory 2949927)
 
